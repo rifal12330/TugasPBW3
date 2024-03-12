@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input[type="number"] {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Kalkulator</h2>
+
+    <div>
+        <label for="operator">Pilih operasi:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="operands">Masukan angka:</label>
+        <input type="number" id="operand1">
+        <input type="number" id="operand2">
+        <button onclick="calculate()">Hitung</button>
+    </div>
+
+    <div id="hasil"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
